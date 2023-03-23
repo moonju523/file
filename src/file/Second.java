@@ -1,24 +1,36 @@
 package file;
 
+import java.util.Scanner;
 
 public class Second {
 
 	public static void main(String[] args) {
-		//100000초를 일 시간 분 초로 변환하고 1년이상인지 확인하는 프로그램
+		//정수 2개를 받고 연산자 네개중 하나를 수신하는 계산기 프로그램(스위치 문 사용)
 		
-		int day,hour,minute,seconds;
-
-		day=100000/86400;
-		hour=(100000%86400)/3600;
-		minute=((100000%86400)%3600)/60;
-		seconds=((100000%86400)%3600)%60;
+		float num1,num2; //a 덧셈 b 뺄셈 c 곱셈 d 나눗셈
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.print("첫번째 정수 입력:");
+			num1=sc.nextFloat();
+			System.out.print("두번째 정수 입력:");
+			num2=sc.nextFloat();
+		}
+		
+		String count = "+";
+		
+		switch(count) {
+		case "+":
+			System.out.println(num1+num2);
+		    
+		case "-":
+			System.out.println(num1-num2);
 			
-		System.out.print(day+"일"+"\t");
-		System.out.print(hour+"시간"+"\t");	
-		System.out.print(minute+"분"+"\t");	
-		System.out.print(seconds+"초"+"\t");
-		
+		case "*":
+			System.out.println(num1*num2);
+			
+		case "/":
+			System.out.println(num1/num2);
+				
+		}	
 
 	}
-
 }
