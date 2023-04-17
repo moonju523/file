@@ -1,9 +1,6 @@
 package file;
-
 import java.util.ArrayList;
-
 import java.util.Scanner;
-
 public class Sentence6 {
 
 	public static void main(String[] args) {
@@ -17,12 +14,10 @@ public class Sentence6 {
 			count();
 		
 		ArrayList<String> set = new ArrayList<>();
-		
 		System.out.println("노래가사:");
 		String str = scanner.nextLine();
 		String[] words = str.split("\\s");
 		set.add(str);
-		
 		
 		for (String wo : words ){
 			System.out.println(wo);

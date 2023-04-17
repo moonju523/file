@@ -10,10 +10,6 @@ public class Sentence2 {
 		System.out.println("노래가사:");
 		num = (char) input.nextInt();
 		
-		if ( num == "")
-			System.out.println();
-		else
-			set.add("as");
 			
 		set.add("Milk"); 
 		set.add("Bread"); 

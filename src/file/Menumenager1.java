@@ -8,10 +8,10 @@ public class Menumenager1 {
 		
 		while(num !=6) {
 			System.out.println("*** Student Management System Menu ***");
-			System.out.println("1. Add Books");//책이름 일련번호 등록일자 입력받아서 책 추가하기
+			System.out.println("1. Add Books");//책이름 (설정 - 일련번호) 저자 장르 입력받아서 책 추가하기
 			System.out.println("2. Delete Books");//책이름 일련번호 하나만 입력받아서 책 삭제하기
 			System.out.println("3. Check rental status");//책이름 일련번호 둘중에 하나 받아서 대여상태 알려주기
-			System.out.println("4. View Books Location");//책이름 일련번호 둘중에 하나 받아서 위치 알려주기 
+			System.out.println("4. View Books Location");//일련번호 받아서 위치 알려주기 
 			System.out.println("5. Show a menu");// 메뉴보여주기
 			System.out.println("6. Exit");// 끝
 			System.out.println("Select one number between 1-6:");
