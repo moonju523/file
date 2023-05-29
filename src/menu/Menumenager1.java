@@ -1,4 +1,4 @@
-package file;
+package menu;
 import java.util.Scanner;
 public class Menumenager1 {
 
@@ -44,14 +44,16 @@ public class Menumenager1 {
 		int BookDate = input.nextInt();
 	}
 	public static void deleteBooks() {
-		Scanner input = new Scanner(System.in);
-		System.out.print("Book Number:");
-		int BookNumber2 = input.nextInt();
+		try (Scanner input = new Scanner(System.in)) {
+			System.out.print("Book Number:");
+			int BookNumber2 = input.nextInt();
+		}
 	}
 	public static void checkStatus() {
-		Scanner input = new Scanner(System.in);
-		System.out.print("Book Number:");
-		int BookNumber3 = input.nextInt();
+		try (Scanner input = new Scanner(System.in)) {
+			System.out.print("Book Number:");
+			int BookNumber3 = input.nextInt();
+		}
 	}
 	public static void viewlocation() {
 		Scanner input = new Scanner(System.in);

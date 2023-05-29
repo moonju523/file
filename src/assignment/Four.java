@@ -26,17 +26,17 @@ class Car{
 }
 
 public class Four {
-	private static Car constructor;
+	private static Car con;
 
 	public static void main(String[] args) {
-		constructor = new Car();
+		con = new Car();
 		
-		constructor.setYear(2015);
-		constructor.setMaker("Honda");
-		constructor.setSpeed(85.0);
+		con.setYear(2015);
+		con.setMaker("Honda");
+		con.setSpeed(85.0);
 		
-		System.out.println("년도:"+ constructor.getYear());
-		System.out.println("만든 회사:" + constructor.getMaker());
-		System.out.println("속도:" + constructor.getSpeed());
+		System.out.println("년도:"+ con.getYear());
+		System.out.println("만든 회사:" + con.getMaker());
+		System.out.println("속도:" + con.getSpeed());
 	}
 }

@@ -1,4 +1,4 @@
-package file;
+package menu;
 import java.util.Scanner;
 public class Menumenager {
 
