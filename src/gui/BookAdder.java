@@ -8,9 +8,13 @@ import javax.swing.SpringLayout;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 
-public class BookAdder extends JFrame{
+public class BookAdder extends JPanel{
+	
+	WindowFrame frame;
    
-   public BookAdder() {
+   public BookAdder(WindowFrame frame) {
+	   this.frame = frame;
+	   
       JPanel panel = new JPanel();
       panel.setLayout(new SpringLayout());
       
@@ -37,9 +41,8 @@ public class BookAdder extends JFrame{
       
       SpringUtilities.makeCompactGrid(panel, 4, 2, 6,6,6,6);
       
-      this.setSize(300, 300);
-      this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      this.setContentPane(panel);
+
+      this.add(panel);
       this.setVisible(true);
       
    }
