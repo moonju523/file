@@ -1,9 +1,13 @@
 package menu;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
+import log.EventLogger;
+
 public class Menumenager3 {
+	static EventLogger logger = new EventLogger("log.txt");
 
 	public static void main(String[] args) {
-		selectMenu(input, bookManager);
 		int num = 0;
 		try (Scanner input = new Scanner(System.in)) {
 			while(num !=6) {
@@ -12,15 +16,19 @@ public class Menumenager3 {
 				switch(num) {
 				case 1:
 					addBooks();
+					logger.log("add books");
 					break;
 				case 2:
 					deleteBooks();
+					logger.log("delete books");
 					break;
 				case 3:
 					checkStatus();
+					logger.log("check books");
 					break;
 				case 4:
 					viewlocation();
+					logger.log("view books");
 					break;
 				default:
 					continue;
@@ -53,7 +61,7 @@ public class Menumenager3 {
 					continue;
 				}
 			}
-			catch(INputMismatchException e) {
+			catch(InputMismatchException e) {
 				System.out.println("Please put an integer between 1 and 5!");
 				if(input.hasNext()) {
 					input.next();

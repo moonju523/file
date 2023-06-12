@@ -1,5 +1,7 @@
 package menu;
 import java.util.Scanner;
+
+import log.EventLogger;
 public class Menumenager1 {
 
 	public static void main(String[] args) {

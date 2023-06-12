@@ -2,6 +2,7 @@ package menu;
 import java.awt.print.Book;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Bookmanager {
@@ -31,14 +32,14 @@ public class Bookmanager {
 					System.out.print("Select num for Book Genre between 1 and 2:");
 				}
 			}
-			catch(INputMismatchException e) {
+			catch(InputMismatchException e) {
 				System.out.println("Please put an integer between 1 and 3!");
 				if(input.hasNext()) {
 					input.next();
 				}
 				genre = 0;
 			}
-		books.add(book);
+			
 	}
 	public static void deleteBooks() {
 		try (Scanner input = new Scanner(System.in)) {
